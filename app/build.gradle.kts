@@ -41,6 +41,9 @@ dependencies {
     implementation("androidx.camera:camera-video:$camerax")
     implementation("androidx.camera:camera-view:$camerax")
 
+    // CameraX exposes ListenableFuture APIs; keep Guava explicit for Kotlin compilation.
+    implementation("com.google.guava:guava:33.3.1-android")
+
     // Ready for future AdMob monetization. Replace the test App ID before release.
     implementation("com.google.android.gms:play-services-ads:23.6.0")
 }
